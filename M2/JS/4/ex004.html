@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.150);
+            font: normal 10pt arial;
+        }
+    </style>
+</head>
+
+<body>
+    <header>aa</header>
+    <main>bb</main>
+
+    <script>
+        //window.alert("Minha primeira mensagem ")
+        ///window.confirm("Confirma")
+        //var numero1 = Number(window.prompt("Numero 1:"))
+        //var numero2 = window.prompt("Numero 2:")
+        //var soma = numero1 + Number.parseInt(numero2)
+        //window.alert(`a soma entre: ${numero1} e ${numero2} é:  ${soma}`)
+        //var nome = window.prompt('Digite se Nome:')
+        var numero1 = window.prompt('Numero 1:')
+        var numero2 = window.prompt('Numero 2:')
+
+        //document.write(`Ola, ${nome}! o seu nome tem: ${nome.length} letras`)
+        //document.write(`${nome.toLocaleUpperCase()}`)
+
+        var n = 1541.5
+            //n.toFixed(2)
+            //n.toFixed(2).replace('.',',')
+            //n.toLocaleString('pt-br', {style: 'currency',currency: 'BRL'})
+
+        /* 
+         5 + 3 = 8
+         5 - 3 = 2
+
+
+        */
+        //var n1 = Number(2) + Number(2)
+        //document.write(`<br>N1 = ${n1}`)
+        //document.write(`<br>N1^2 = ${n1 **=2 }`)
+
+
+        /*
+        Comentarios
+        < menor
+        */
+
+        var maior = numero1 < numero2
+        var igual = numero1 == numero2
+        var op1 = numero1 < numero2 || numero1 == numero2 / 2
+        document.write(`<br>O numero 1 é ${maior}`)
+        document.write(`<br>Igual ${igual}`)
+        document.write(`<br>Igual ${op1}`)
+        var media = (Number(numero1) + Number(numero2)) / 2
+        var resultado = media >= 7 ? 'Aprovado' : 'reprovado'
+        document.write(`<br>Média ${media} resultado: ${resultado}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.500);
+            color: white;
+        }
+        
+        div {
+            background-color: green;
+            color: white;
+            width: auto;
+            height: auto;
+            line-height: 100px;
+            margin: 20px 10px;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    <h1>Aula 5 - Inicinado com DOM - Documento Object Model</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo <strong>DOM</strong> </p>
+    <div id="msg">Clique Aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+            //var vid = window.document.getElementById('msg')
+
+        //var vid = window.document.getElementsByClassName('msg')[0]
+        var vid = window.document.querySelector('div#msg')
+        document.write(`<br> ${document.URL}`)
+        document.write(`<br> ${p1.innerText}`)
+        document.write(`<br> ${vid.innerHTML}`)
+        vid.style.backgroundColor = 'blue'
+    </script>
+    -->
+    <h1>Aula 6 - Eventos</h1>
+    <!--https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model-->
+    <!--    
+    <div id="area1" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">interaja</div>
+
+    <div id="area2" ">interaja</div>
+    <script>
+        var a = window.document.getElementById('area')
+        var b = window.document.getElementById('area2')
+        b.addEventListener('click',clicar)
+        b.addEventListener('mouseenter',entrou)
+        b.addEventListener('mouseout',saiu)
+        
+        function clicar() {
+            b.innerText = 'clicou'
+        }
+
+        function entrou() {
+            b.style.background = 'black'
+        }
+
+        function saiu() {
+            b.style.background = 'green'
+        }
+    </script>
+    
+    -->
+    <!--
+    <h1>Outra parte</h1>
+    <h1>Soma duas entradas</h1>
+    <input type="number" name="textn1" id="textn1">
+    <input type="number" name="textn2" id="textn2">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('textn1')
+            var tn2 = window.document.querySelector('input#textn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.style.width = '100px'
+            res.innerHTML = `a soma dos valores é ${s}`
+        }
+    </script>
+    -->
+    <h1>Soma duas entradas</h1>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Run" onclick="switch_case()">
+
+    <div id="res">Resultado</div>
+
+    <h1>Condicionais Aula 17</h1>
+    <script>
+        function velocidade() {
+            var strVel = window.document.getElementById('vel')
+            var vel = strVel.value
+            res.innerHTML = `<p>Velocidade Atual ${vel}</p>`
+
+            if (vel <= 60) {
+                res.innerHTML += `<p>Boa viagem</p>`
+
+            } else if (vel > 60 && vel <= 80) {
+                res.innerHTML += `<p><strong>Multado</strong> 20%</p>`
+
+            } else if (vel > 80) {
+                res.innerHTML += `<p><strong>Multado</strong> 40%</p>`
+
+            }
+
+        }
+
+        function saudacao() {
+            var sis_hora = new Date()
+            var hora_atual = sis_hora.getHours()
+            console.log(`agora são exatamente ${hora_atual}.`)
+            if (hora_atual < 12) {
+                console.log('Bom Dia!')
+            } else if (hora_atual <= 18) {
+
+                console.log('Boa Tarde!')
+            } else {
+                console.log('Boa Noite!')
+            }
+        }
+
+        function switch_case() {
+            /*
+                0 - domingo 
+                1 - segunda
+                2 - terca
+                3 - quarta
+                4 - quinta
+                5 - sexta
+                6 - sabado
+            */
+            var sis_data = new Date()
+            var dia_atual = sis_data.getDay()
+            console.log(dia_atual)
+            switch (dia_atual) {
+                case 0:
+                    console.log('Domingo')
+                    break;
+                case 1:
+                    console.log('Segunda')
+                    break;
+                case 2:
+                    console.log('Terça')
+                    break;
+                case 3:
+                    console.log('Quarta')
+                    break;
+                case 4:
+                    console.log('Quinta')
+                    break;
+                case 5:
+                    console.log('Sexta')
+                    break;
+
+                default:
+                    console.log('Erro')
+                    break;
+            }
+
+        }
+    </script>
+</body>
+
+
+</html>

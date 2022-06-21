@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+         :root {
+            --max-img-width: 600px;
+        }
+        
+        body {
+            background-color: gray;
+        }
+        
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Teste de Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quisquam enim in? Molestias cupiditate incidunt aliquam saepe laudantium tempora porro, obcaecati maxime numquam quas facere, dolores placeat nihil harum suscipit! Lorem ipsum, dolor
+            sit amet consectetur adipisicing elit. Quos porro consectetur architecto, odit quo aut. Earum dolorum numquam officia iste! Accusantium ducimus quis explicabo exercitationem delectus suscipit perferendis voluptates quisquam? Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Fugit, ab voluptas dolores, ipsam officiis facere dolor velit a sequi quis pariatur aut vel esse fuga animi quaerat odit nulla earum.</p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina">
+
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quisquam enim in? Molestias cupiditate incidunt aliquam saepe laudantium tempora porro, obcaecati maxime numquam quas facere, dolores placeat nihil harum suscipit! Lorem ipsum, dolor
+            sit amet consectetur adipisicing elit. Quos porro consectetur architecto, odit quo aut. Earum dolorum numquam officia iste! Accusantium ducimus quis explicabo exercitationem delectus suscipit perferendis voluptates quisquam? Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Fugit, ab voluptas dolores, ipsam officiis facere dolor velit a sequi quis pariatur aut vel esse fuga animi quaerat odit nulla earum.</p>
+    </main>
+</body>
+
+</html>
