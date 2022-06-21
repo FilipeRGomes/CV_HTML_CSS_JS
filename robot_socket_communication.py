@@ -35,3 +35,6 @@ while True:
 
     finally:
         connection.close()
+
+class TestGit:
+    github = "Em Teste"
